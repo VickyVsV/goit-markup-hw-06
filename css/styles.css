@@ -708,6 +708,12 @@ address {
   margin-left: 93px;
 }
 
+.footer-subscription-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
 .footer-subscription-title {
   font-weight: 700;
   font-size: 14px;
@@ -719,12 +725,14 @@ address {
 }
 
 .footer-subscription-input {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px 16px;
 }
 
 .footer-subscription-input::placeholder {
@@ -743,6 +751,11 @@ address {
   background: var(--main-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background-color var(--duration) var(--timing-function-cubic);
 }
 
 .footer-subscription-btn-text {
@@ -754,6 +767,11 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+.footer-subscription-btn:hover,
+.footer-subscription-btn:focus {
+  background-color: #188ce8;
 }
 
 /* -------------- MODAL WINDOW / BACKDROP------------*/
@@ -871,6 +889,13 @@ address {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  transition: border-color var(--duration) var(--timing-function-cubic),
+    outline-color var(--duration) var(--timing-function-cubic);
+}
+
+.modal-input-comment:focus {
+  border-color: var(--main-hover-color);
+  outline-color: var(--main-hover-color);
 }
 
 .modal-input-comment::placeholder {
