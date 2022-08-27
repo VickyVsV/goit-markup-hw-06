@@ -731,6 +731,7 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
   background-color: rgba(0, 0, 0, 0);
   padding: 15px 16px;
 }
@@ -756,9 +757,14 @@ address {
   align-items: center;
   gap: 10px;
   transition: background-color var(--duration) var(--timing-function-cubic);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
 
-.footer-subscription-btn-text {
+/* .footer-subscription-btn-text {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -767,7 +773,7 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
+}*/
 
 .footer-subscription-btn:hover,
 .footer-subscription-btn:focus {
@@ -792,8 +798,8 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1); /*scale показыает точку с которой будет пояляться */
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -883,6 +889,7 @@ address {
 }
 
 .modal-input-comment {
+  display: block;
   width: 100%;
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
